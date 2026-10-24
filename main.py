@@ -25,7 +25,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = URL.create(
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-db = SQLAlchemy(app)
+database = SQLAlchemy(app)
 
 # 餐廳
 class Restaurants(db.Model):
