@@ -8,6 +8,7 @@ from sqlalchemy import URL, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import text
 
+version = 0.02
 #這是主要分支
 
 load_dotenv()
