@@ -8,6 +8,8 @@ from sqlalchemy import URL, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import text
 
+#這是主要分支
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -25,7 +27,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = URL.create(
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-database = SQLAlchemy(app)
+db = SQLAlchemy(app)
 
 # 餐廳
 class Restaurants(db.Model):
